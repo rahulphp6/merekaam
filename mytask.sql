@@ -163,7 +163,7 @@ CREATE TABLE `leads` (
 --
 
 INSERT INTO `leads` (`id`, `name`, `phone`, `website`, `project_name`, `lead_status`, `status`, `date`) VALUES
-(4, 'Suheail', '', '', 'Whatsapp', 'new', 1, '2026-08-12 18:30:00'),
+(4, 'suhial', '', '', 'Whatsapp', 'new', 1, '2026-08-12 18:30:00'),
 (5, 'Akshay', '', '', 'Medtenance', 'new', 1, '2025-02-28 18:30:00'),
 (6, 'Shree Shyam Hospital', '', '', '', 'new', 1, '2026-07-31 18:30:00');
 
@@ -294,24 +294,6 @@ CREATE TABLE `payments` (
   `status` tinyint(4) DEFAULT 1,
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `payments`
---
-
-INSERT INTO `payments` (`id`, `project_id`, `task_id`, `installment_no`, `amount`, `paid_date`, `due_date`, `paid_status`, `notes`, `status`, `date`) VALUES
-(3, 4, 4, 1, 5000.00, '2026-08-13', '2026-08-13', 'paid', 'advance paid 5k', 1, '2026-08-13 18:30:00'),
-(4, 5, 5, 1, 44670.00, '2026-07-13', '2026-07-13', 'paid', 'AP', 1, '2026-08-13 18:30:00'),
-(5, 5, 5, 2, 44670.00, NULL, '2026-08-14', 'overdue', 'Still pending', 1, '2026-08-13 18:30:00'),
-(6, 6, 6, 1, 62000.00, '2026-07-19', '2026-07-13', 'paid', 'advance paid', 1, '0000-00-00 00:00:00'),
-(7, 6, 7, 2, 62000.00, '2026-08-14', '2026-08-14', 'paid', '', 1, '0000-00-00 00:00:00'),
-(8, 6, 8, 3, 62000.00, NULL, '2026-08-31', 'pending', 'if project deliver before timeline then done all dues', 1, '2026-08-12 18:30:00'),
-(9, 6, 9, 4, 62000.00, NULL, '2026-09-19', 'pending', '', 1, '2026-08-13 18:30:00'),
-(10, 9, 11, 1, 62000.00, '2025-03-18', '0000-00-00', 'paid', '', 1, '0000-00-00 00:00:00'),
-(11, 8, 10, 1, 17000.00, '2025-03-18', '0000-00-00', 'paid', '', 1, '2026-08-13 18:30:00'),
-(12, 10, 0, 1, 12000.00, '2025-03-18', '0000-00-00', 'paid', '', 1, '2026-08-13 18:30:00');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `permissions`
@@ -558,7 +540,7 @@ CREATE TABLE `smtp` (
 --
 
 INSERT INTO `smtp` (`id`, `host`, `port`, `user`, `pwd`, `status`, `phone`, `email`, `multi_ph`, `server_date`) VALUES
-(3, 'imaxxe.com', 465, 'sales@imaxxe.com', 'JHNsc0AxODE5ODI=', 1, '971521994000', 'suheail@hotmail.com', '', '2020-10-17 23:36:23');
+(3, 'imaxxe.com', 465, 'sales@imaxxe.com', 'JHNsc0AxODE5ODI=', 1, '909090990909', 'suhial@hotmail.com', '', '2020-10-17 23:36:23');
 
 -- --------------------------------------------------------
 
@@ -699,29 +681,6 @@ CREATE TABLE `todo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `todo`
---
-
-INSERT INTO `todo` (`id`, `name`, `description`, `date`, `status`, `store`, `server_date`) VALUES
-(4, 'Lens Fitting-Rimless', 'Eyewear Lens Fitting', '2022-02-10 09:24:11', 1, 704774487, '2022-02-08 06:05:03'),
-(5, 'Lens Fitting-Semi Rimless', 'Eyewear Lens Fitting', '2022-02-10 09:24:16', 1, 704774487, '2022-02-08 06:05:23'),
-(6, 'Lens Fitting-Full Frame', 'Eyewear Lens Fitting', '2022-02-10 09:24:21', 1, 704774487, '2022-02-08 12:19:00'),
-(7, 'Lens Fitting-Polycarbonate', 'Eyewear Lens Fitting', '2022-02-10 09:24:26', 1, 704774487, '2022-02-08 12:19:57'),
-(8, 'Ordering Prescription Lens', 'Making order lens with supplier', '2022-02-12 07:54:51', 1, 704774487, '2022-02-10 01:39:50'),
-(10, 'Lens Fitting-Rimless ', 'Eyewear Lens Fitting', '2022-05-11 10:05:44', 1, 772285939, '2022-05-11 00:35:44'),
-(11, 'Lens Fitting-Semi Rimless', 'Eyewear Lens Fitting', '2022-05-11 10:06:29', 1, 772285939, '2022-05-11 00:36:29'),
-(12, 'Lens Fitting-Full Frame', 'Eyewear Lens Fitting', '2022-05-11 10:06:53', 1, 772285939, '2022-05-11 00:36:53'),
-(13, 'Lens Fitting-Polycarbonate', 'Eyewear Lens Fitting', '2022-05-11 10:07:10', 1, 772285939, '2022-05-11 00:37:10'),
-(14, 'Ordering Prescription Lens', 'Making order lens with supplier', '2022-05-11 10:07:29', 1, 772285939, '2022-05-11 00:37:29'),
-(15, 'Special Ordering Frames & Sunglasses ', 'As per customer requirement order frames & sunglasses', '2022-05-11 10:09:31', 1, 772285939, '2022-05-11 00:39:31'),
-(16, 'Special Ordering Frames & Sunglasses', 'As per customer requirement order frames & sunglasses', '2022-05-11 10:09:48', 1, 704774487, '2022-05-11 00:39:48'),
-(17, 'Ordering Lens', ' aking order lens with supplier', '2022-05-15 11:17:03', 1, 772285939, '2022-05-15 13:47:03'),
-(18, 'Repairing Service', '', '2024-02-06 11:27:48', 1, 772285939, '2024-02-06 13:57:48'),
-(20, 'demo', '', '2026-03-02', 1, 898115343, '2026-03-02 05:03:16');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `users`
 --
 
@@ -753,7 +712,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `UserName`, `last_name`, `role`, `dep_id`, `profilePic`, `password`, `email`, `phone`, `Gender`, `dob`, `address`, `City`, `CountryName`, `EndUserIp`, `status`, `date`, `is_current_user`, `role_id`) VALUES
-(1, 'Suheail', 'Suheail_iSpexe', NULL, 1, 0, 'upload/teams-dp/screenshot-2025-10-10-130827/screenshot-2025-10-10-130827.png', '$2y$10$FLmYQNwiwD6zniLO2M0Q7.TXUiOH9XgnSmSCkE0.lhx8w8fwk7fcu', 'suheail@hotmail.com', '971521994000', NULL, NULL, NULL, NULL, NULL, NULL, 1, '0000-00-00 00:00:00', NULL, '1'),
+(1, 'suhial', 'suhial_iSpexe', NULL, 1, 0, 'upload/teams-dp/screenshot-2025-10-10-130827/screenshot-2025-10-10-130827.png', '$2y$10$FLmYQNwiwD6zniLO2M0Q7.TXUiOH9XgnSmSCkE0.lhx8w8fwk7fcu', 'suhial@hotmail.com', '909090990909', NULL, NULL, NULL, NULL, NULL, NULL, 1, '0000-00-00 00:00:00', NULL, '1'),
 (2, 'Rahul', 'SuperAdmin', NULL, 1, NULL, 'upload/teams-dp/rpilot/rpilot.png', '$2y$10$C7T8hHBQKQKrdrds5r8/QeeYAACE8.FVEfyAI2dvV.j/mT1R77t46', 'rahulphp7@gmail.com', '919990099238', NULL, NULL, NULL, NULL, NULL, NULL, 1, '2026-08-14 00:00:00', NULL, '3'),
 (320, 'Vikas', NULL, NULL, 5, 59, NULL, NULL, 'vikasphp@gmail.com', '', NULL, NULL, NULL, NULL, NULL, NULL, 1, '0000-00-00 00:00:00', NULL, '5'),
 (321, 'sumit', NULL, NULL, 5, 60, NULL, NULL, 'sumit@gmail.com', '', NULL, NULL, NULL, NULL, NULL, NULL, 1, '2026-08-14 00:00:00', NULL, '5'),
