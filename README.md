@@ -32,7 +32,7 @@
 
 ## ⚠️ Important Setup Notice: Required Dependency (`rahulphp/crud`)
 > **Note:** This project relies on a core remote package for handling database CRUD operations and interface rendering. 
-> 
+> setup first this module: https://github.com/rahulphp6/crud
 > **You must set up and connect the `rahulphp/crud` remote repository/module for this application to function properly.** Without setting up `rahulphp/crud`, the system's core data-handling modules will not execute successfully.
 
 ---
