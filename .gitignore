@@ -1,3 +1,5 @@
 .env
 config/database.php
 uploads/
+crud
+crud/
