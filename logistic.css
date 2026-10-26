@@ -1,0 +1,65 @@
+/* Zoho Theme Overrides */
+body {
+    background-color: #f9f9fb;
+}
+
+/* Top Navbar Styling */
+.iq-navbar {
+    background-color: #232f3e !important;
+    border-bottom: none;
+}
+
+.iq-navbar .navbar-brand,
+.iq-navbar .nav-link,
+.iq-navbar .caption-title,
+.iq-navbar .caption-sub-title,
+.iq-navbar .navbar-toggler-icon,
+.iq-navbar svg {
+    color: #ffffff !important;
+}
+
+.iq-navbar .search-input .form-control {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.iq-navbar .search-input .form-control::placeholder {
+    color: #cccccc !important;
+}
+
+.iq-navbar .search-input .input-group-text {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* Sidebar Styling */
+.sidebar-default {
+    background-color: #f8f9fa !important;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar .sidebar-header {
+    background: #f8f9fa !important;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-list .nav-item .nav-link {
+    color: #333333 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-list .nav-item .nav-link:hover {
+    background-color: #e9ecef !important;
+}
+
+.sidebar-list .nav-item .nav-link.active {
+    background-color: #408dfb !important;
+    color: #ffffff !important;
+}
+
+.sidebar-list .nav-item .nav-link.active i,
+.sidebar-list .nav-item .nav-link.active svg {
+    color: #ffffff !important;
+}

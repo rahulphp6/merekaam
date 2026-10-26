@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRM User Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4">
+        <h1 class="mb-4 text-primary">📘 CRM User Guide</h1>
+
+        <!-- Getting Started -->
+        <div class="section">
+            <h2>1. Getting Started</h2>
+            <ul>
+                <li><b>Login:</b> Open your CRM URL and log in with your credentials.</li>
+                <li><b>Navigation:</b> Use the sidebar/top menu to access modules like Dashboard, Clients, Projects,
+                    Tasks, Payments, Bugs.</li>
+                <li><b>Profile:</b> Update your profile and password from the settings menu.</li>
+            </ul>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="section">
+            <h2>2. Dashboard Overview</h2>
+            <p>The dashboard gives you a quick snapshot of your business:</p>
+            <ul>
+                <li><b>Filters:</b> Choose Custom (1st–Today), Week, Month, Year.</li>
+                <li><b>Widgets:</b> See totals for Payments, Projects, Tasks, Bugs.</li>
+                <li><b>Charts:</b> Visualize Sales, Profit, Revenue, Net Income, and Task Progress.</li>
+            </ul>
+        </div>
+
+        <!-- Enterprise Clients -->
+        <div class="section">
+            <h2>3. Enterprise Clients Table</h2>
+            <p>This table shows combined data:</p>
+            <ul>
+                <li><b>Task Name + Project ID</b></li>
+                <li><b>Paid Status</b> (only payments marked as <i>paid</i> with due date in current month)</li>
+                <li><b>Payments (₹)</b></li>
+                <li><b>Total Tasks & Completed Tasks</b></li>
+                <li><b>Progress Bar</b> for completion percentage</li>
+            </ul>
+            <p>Footer totals show overall payments, tasks, completed tasks, and average progress.</p>
+        </div>
+
+        <!-- Clients & Projects -->
+        <div class="section">
+            <h2>4. Managing Clients & Projects</h2>
+            <ul>
+                <li><b>Add Client:</b> Enter client details (name, phone, website).</li>
+                <li><b>Create Project:</b> Add project info (amount, payment terms, policy, reference link, status).
+                </li>
+                <li><b>Track Payments:</b> Payments linked to projects show paid status and due date.</li>
+            </ul>
+        </div>
+
+        <!-- Tasks -->
+        <div class="section">
+            <h2>5. Task Management</h2>
+            <ul>
+                <li><b>Create Task:</b> Assign tasks to projects with deadlines.</li>
+                <li><b>Update Status:</b> Mark tasks as in progress or completed.</li>
+                <li><b>History:</b> Use discussion/chat section to track updates.</li>
+            </ul>
+        </div>
+
+        <!-- Bugs -->
+        <div class="section">
+            <h2>6. Bug Tracking</h2>
+            <ul>
+                <li><b>Report Bug:</b> Attach screenshots and describe the issue.</li>
+                <li><b>Status:</b> Track bugs as open or fixed.</li>
+                <li><b>Resolution:</b> Developers update bug status once solved.</li>
+            </ul>
+        </div>
+
+        <!-- Payments -->
+        <div class="section">
+            <h2>7. Payments</h2>
+            <ul>
+                <li><b>Paid Payments:</b> Only payments with status <i>paid</i> and due date in current month are
+                    counted.</li>
+                <li><b>Advance Payments:</b> Shown separately if applicable.</li>
+                <li><b>Revenue & Profit:</b> Automatically calculated in dashboard.</li>
+            </ul>
+        </div>
+
+        <!-- Tips -->
+        <div class="section">
+            <h2>8. Tips for Users</h2>
+            <ul>
+                <li>Always set deadlines for tasks so they appear in reports.</li>
+                <li>Use filters to analyze performance for different time frames.</li>
+                <li>Check Enterprise Clients table for combined view of tasks and payments.</li>
+                <li>Keep project IDs consistent so tasks and payments link correctly.</li>
+                <li>Update bug statuses regularly to maintain clean reports.</li>
+            </ul>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section">
+            <h2>9. FAQ</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item faq-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1">
+                            How do I filter data by date?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Use the dropdown on the dashboard to select Custom, Week, Month, or Year. Custom defaults to
+                            1st of the month to today.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                            Why is my payment amount showing 0?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Payments only count if they are marked as <i>paid</i> and the due date is within the current
+                            month. Otherwise, the amount will show as 0.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support -->
+        <div class="section">
+            <h2>10. Support</h2>
+            <p>If you face issues:</p>
+            <ul>
+                <li>Check your internet connection.</li>
+                <li>Ensure you are logged in with correct credentials.</li>
+                <li>Contact your CRM administrator for technical help.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

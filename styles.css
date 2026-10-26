@@ -1,0 +1,215 @@
+/* Bootstrap Component Overrides for Custom Primary/Blue Theme */
+.main-content .content-inner{padding: 10px;background-color: #eaf5ff;}
+.text-primary, .text-blue {
+  color: var(--primary) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #17b084; /* Slightly darker shade for hover state */
+  border-color: #15a47c;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.dual_color {
+    background: linear-gradient(to right, #03A9F4 50%, #555 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.dual_color:hover {
+    background: linear-gradient(to left, #03A9F4 50%, #555 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.nav-link a {
+    color: #555;
+}
+
+.nav-link a:hover {
+    color: #072cfd;
+}
+
+.btn,
+.btn-xs {
+    padding: 1px 8px;
+}
+
+/* ========================================== */
+/* ZOHO CRM SIDEBAR STYLES                    */
+/* ========================================== */
+.zoho-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.zoho-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.zoho-sidebar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+/* ========================================== */
+/* SIDEBAR HOVER FIX (ZOHO BLUE HOVER)        */
+/* ========================================== */
+
+/* 1. Force your desired hover effect on both DIVs and normal Nav-Links */
+.zoho-sidebar .active {
+    background-color: #408dfb !important;
+    border-radius: 10px !important;
+}
+
+.zoho-sidebar .active a {
+    color: #fff !important;
+}
+
+.zoho-sidebar .nav-item>div:hover,
+.zoho-sidebar .nav-item>a.nav-link:hover {
+    background-color: #ddd !important;
+    color: #555 !important;
+    border-radius: 10px !important;
+}
+
+/* 2. Force all text and icons INSIDE the hovered element to turn white */
+.zoho-sidebar .nav-item>div:hover .active,
+.zoho-sidebar .nav-item>div:hover .nav-link,
+.zoho-sidebar .nav-item>div:hover .item-name,
+.zoho-sidebar .nav-item>div:hover i,
+.zoho-sidebar .nav-item>div:hover svg,
+.zoho-sidebar .nav-item>a.nav-link:hover .item-name,
+.zoho-sidebar .nav-item>a.nav-link:hover i {
+    color: #555 !important;
+}
+
+/* 3. Kill the old conflicting Template (HopeUI) CSS */
+.sidebar.sidebar-default .nav-link:not(.static-item):hover:not(.active):not([aria-expanded=true]) {
+    background-color: transparent !important;
+    color: #4b5563 !important;
+    /* Revert to default text color */
+}
+
+/* Navigation Links */
+.zoho-sidebar .nav-item {
+    margin-bottom: 2px;
+}
+
+.zoho-sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #4b5563;
+    /* Sharp Grey */
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 0 20px 20px 0;
+    /* Zoho's signature right-rounded pill */
+    margin-right: 15px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: none !important;
+}
+
+.zoho-sidebar .nav-link:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+/* Active State (Zoho Blue) */
+.zoho-sidebar .nav-link.active {
+    background-color: #408dfb !important;
+    color: #ffffff !important;
+}
+
+/* Icons */
+.zoho-sidebar .nav-link i.icon-left {
+    width: 24px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+.zoho-sidebar .nav-link.active i.icon-left {
+    color: #ffffff !important;
+}
+
+.zoho-sidebar .right-icon {
+    margin-left: auto;
+    font-size: 10px;
+    transition: transform 0.2s;
+}
+
+.zoho-sidebar .nav-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    z-index: 99;
+}
+
+/* ─── 19. INFINITY LOOP ─── */
+  .infinity-svg { overflow: visible; }
+  .infinity-path {
+    fill: none;
+    stroke: url(#infGrad);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-dasharray: 320;
+    stroke-dashoffset: 0;
+    animation: infinity-trace 2s linear infinite;
+    filter: drop-shadow(0 0 6px #00d9ff);
+  }
+  .infinity-dot {
+    fill: white;
+    filter: drop-shadow(0 0 8px white);
+    animation: infinity-dot-move 2s linear infinite;
+  }
+  @keyframes infinity-trace {
+    from { stroke-dashoffset: 320; }
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes infinity-dot-move {
+    0%   { offset-distance: 0%; }
+    100% { offset-distance: 100%; }
+  }
